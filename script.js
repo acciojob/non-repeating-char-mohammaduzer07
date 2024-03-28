@@ -10,12 +10,12 @@ function firstNonRepeatedChar(str) {
 	  }
 	  else{
 	    if(i-j <= 1){
-	      console.log(str.charAt(j));
-	      break;
+	      return (str.charAt(j));
 	    }
 	    j=i;
 	    i++;
-	  }      
+	  }     
+		return null
 }
 const input = prompt("Enter a string");
 alert(firstNonRepeatedChar(input)); 
